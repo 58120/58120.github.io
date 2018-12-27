@@ -720,7 +720,12 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: url(../img/dmr1.png) no-repeat;
   background-size: cover;
 }
-
+.description{
+  color : #fff;
+}
+.disque-presentation{
+  font-size: 18px;
+}
 #hero-area {
   color: #21263a;
   overflow: hidden;
