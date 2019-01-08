@@ -30,6 +30,30 @@ body {
 .membres{
   padding-top: 50px;
 }
+.prospace-section{
+  height: 600px;
+}
+.text-prospace{
+  margin-bottom: 20px;
+  color: #ffffff;
+  
+}
+.envelope{
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  background-color:#242c58;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+}
+.center{
+  text-align: center;
+  color: #ffffff;
+}
 h1, h2, h3, h4 {
   font-size: 38px;
   font-weight: 700;
