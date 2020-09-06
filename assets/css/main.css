@@ -2,8 +2,29 @@
 html {
   overflow-x: hidden;
 }
+.video{
+  padding-bottom: 52px;
+}
+.link-home{
+  padding-top: 80px;
+}
 
-
+@media (max-width: 770px) {
+  .hero-area-bg {
+    background: url(../img/gallery/trioluzy-min.jpg) no-repeat !important;
+    background-size: cover;
+  }
+}
+@media (max-width: 500px) {
+  .hero-area-bg {
+    background: url(../img/gallery/trioluzy-min-min.jpg) no-repeat !important;
+    background-size: cover;
+  }
+}
+.hero-area-bg {
+  background: url(../img/gallery/viljandi.jpg) no-repeat;
+  background-size: cover;
+}
 body {
   background: #21263a;
   font-size: 14px;
@@ -36,7 +57,7 @@ body {
 .text-prospace{
   margin-bottom: 20px;
   color: #ffffff;
-  
+
 }
 .envelope{
   text-align: center;
@@ -748,15 +769,14 @@ a.back-to-top:hover, a.back-to-top:focus {
 /* ==========================================================================
 3. Hero Area
 ========================================================================== */
-.hero-area-bg {
-  background: url(../img/dmr1.png) no-repeat;
-  background-size: cover;
-}
+
 .description{
   color : #fff;
+  text-align: center;
 }
 .disque-presentation{
   font-size: 18px;
+  padding-top: 55px;
 }
 .description{
   font-size: 16px;
