@@ -8,25 +8,112 @@ html {
 .link-home{
   padding-top: 184px;
 }
-.contact-form, #contact{
-  background-color: white;
+
+.section-padding iframe {
+  width: 100%;
+  /* L'iframe prendra toute la largeur de la div parent */
+  height: auto;
+  /* L'iframe s'ajustera en hauteur automatiquement */
+  aspect-ratio: 16 / 9;
+  /* Pour conserver un ratio d'aspect 16:9 */
+  max-width: 100%;
+  /* Empêche l'iframe de dépasser la taille de la section */
+  border: none;
+  /* Pour enlever les bordures de l'iframe */
 }
+
+
+.musician-photo {
+  width: 100%;
+  /* S'adapte à la taille du conteneur */
+  height: auto;
+  border-radius: 15px;
+  /* Bordures arrondies */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Ombre pour relief */
+  transition: transform 0.3s ease-in-out;
+  /* Animation douce au survol */
+}
+
+.musician-photo:hover {
+  transform: scale(1.05);
+  /* Agrandissement au survol */
+}
+
+.description {
+  text-align: center;
+  /* Centre le texte */
+  font-family: 'Arial', sans-serif;
+  margin-top: 10px;
+}
+
+.description h3 {
+  font-size: 3.5em;
+  color: #333;
+}
+
+.description p {
+  font-size: 3.2em;
+  color: #555;
+  margin-bottom: 100px;
+}
+
+
+/* Styles par défaut */
+.hero-area-bg {
+  background: url(../img/gallery/7.jpg) no-repeat ;
+  background-size: cover;
+  /* background-attachment: scroll; */
+  /* Maintient l'image en place lors du défilement */
+}
+
+/* Écrans larges - Ordinateurs portables et plus grands (largeur > 1000px) */
+@media (min-width: 1001px) {
+  .hero-area-bg {
+    background: url(../img/gallery/7.jpg)no-repeat ;
+    background-size: cover;
+    /* background-attachment: scroll; */
+  }
+}
+
+/* Écrans moyens - Tablettes et petits ordinateurs (max-width: 1000px) */
+@media (max-width: 1000px) {
+  .hero-area-bg {
+    background: url(../img/gallery/7.jpg)no-repeat center;
+    background-size: cover;
+    /* background-attachment: scroll; */
+    /* Supprime l'effet de fixation sur les écrans plus petits */
+  }
+}
+
+/* Écrans petits - Tablettes en mode portrait et smartphones larges (max-width: 770px) */
 @media (max-width: 770px) {
   .hero-area-bg {
-    background: url(../img/gallery/trioluzy-min.jpg) no-repeat !important;
+    background: url(../img/gallery/vertical2.jpg) no-repeat center;
     background-size: cover;
+    /* background-attachment: scroll; */
   }
 }
+
+/* Très petits écrans - Smartphones (max-width: 500px) */
 @media (max-width: 500px) {
   .hero-area-bg {
-    background: url(../img/gallery/1-Gallica©AurélienIbanez.jpg) no-repeat !important;
+    background: url(../img/gallery/vertical2.jpg) no-repeat center;
     background-size: cover;
+    /* background-attachment: scroll; */
   }
 }
-.hero-area-bg {
-  background: url(../img/gallery/1.jpg) no-repeat;
-  background-size: cover;
+
+/* Écrans extra petits - Petits smartphones (max-width: 320px) */
+@media (max-width: 320px) {
+  .hero-area-bg {
+    background: url(../img/gallery/vertical2.jpg) no-repeat  !important;
+    background-size: cover;
+    /* background-attachment: scroll; */
+  }
 }
+
+*
 body {
   background: #21263a;
   font-size: 14px;
@@ -54,7 +141,7 @@ body {
   padding-top: 50px;
 }
 .prospace-section{
-  height: 600px;
+  height: 300px;
 }
 .text-prospace{
   margin-bottom: 20px;
@@ -147,6 +234,10 @@ ul li, ol li {
   text-align: center;
 }
 
+.details-technique{
+  margin: 50px;
+}
+
 .section-title-header p {
   text: center;
   font-weight: 400;
@@ -155,7 +246,7 @@ ul li, ol li {
 }
 
 .section-title {
-  color: #fff;
+  /* color: #fff; */
   font-size: 38px;
   text-align: center;
   letter-spacing: 1px;
@@ -457,7 +548,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .timeline li .content-text {
-  background: #f2f2f2;
+  background: #ffffff;
   padding: 20px;
 }
 
@@ -523,6 +614,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #75ca3c;
   position: relative;
   padding: 0px;
+  font-size: 5;
 }
 
 .top-nav-collapse {
@@ -740,7 +832,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   }
   .navbar-brand {
     position: absolute;
-    padding: 0px 15px;
+    padding: 15px 15px;
     top: 0;
   }
   .navbar-brand img {
@@ -753,8 +845,8 @@ a.back-to-top:hover, a.back-to-top:focus {
     display: block;
   }
   .slicknav_nav .active a {
-    background: #E91E63;
-    color: #21263a;
+    /* background: #E91E63; */
+    /* color: #21263a; */
   }
   .slicknav_nav a:hover,
   .slicknav_nav a:focus,
@@ -774,7 +866,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 .disque-presentation{
   font-size: 18px;
-  padding-top: 55px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: justify;
 }
 .description{
   font-size: 16px;
@@ -789,8 +883,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   height: 1000px;
 
 }
-#about, #membres, #video, #portfolios, #prospace, #contac, #resume{
-  background-color: white;
+#about, #prospace, #membres, #video, #portfolios, #prospace, #contact, #resume{
+  background-color: #fbf2ea;
 }
 #hero-area .overlay {
   position: absolute;
@@ -803,7 +897,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #hero-area .contents {
-  padding: 350px 0px 120px;
+  padding: 450px 0px 120px
 }
 
 #hero-area .contents h5 {
@@ -915,7 +1009,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 180, 217, 0.6);
+  /* background: rgba(0, 180, 217, 0.6); */
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -1062,7 +1156,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .footer-right-contact {
   padding: 4px;
-  border: 1px solid #e1e1e1;
   margin-top: 30px;
 }
 
